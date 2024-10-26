@@ -19,7 +19,7 @@ import {
 } from "firebase/firestore";
 import { getMessageDocRef, db, getUserId } from "../lib/firebase";
 import { Message } from "../types/message";
-import { MessageItem } from "../component/messageitem"; // 修正箇所
+import { MessageItem } from "./messageitem"; // 修正箇所
 
 export const Chat = () => {
   const [text, setText] = useState<string>("");
